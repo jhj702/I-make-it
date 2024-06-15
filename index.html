@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Game with Scoreboard</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      display: block;
+      background-color: #f0f0f0;
+      margin: 20px auto;
+      border: 2px solid #333;
+    }
+    #scoreboard {
+      position: absolute;
+      top: 20px;
+      left: 20px; /* 왼쪽 상단에 배치 */
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+<div id="scoreboard">Score: <span id="scoreValue">0</span></div>
+<script src="/game.js"></script>
+</body>
+</html>
